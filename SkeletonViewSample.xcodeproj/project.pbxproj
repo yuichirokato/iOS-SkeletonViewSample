@@ -15,6 +15,9 @@
 		0F4EAA4F235F02D300B2FCBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4EAA4D235F02D300B2FCBF /* LaunchScreen.storyboard */; };
 		0F4EAA5A235F02D300B2FCBF /* SkeletonViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4EAA59235F02D300B2FCBF /* SkeletonViewSampleTests.swift */; };
 		0F4EAA65235F02D300B2FCBF /* SkeletonViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4EAA64235F02D300B2FCBF /* SkeletonViewSampleUITests.swift */; };
+		0F68F16D235F5CAC00B5D4E7 /* SkeletonView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F68F16C235F5CAC00B5D4E7 /* SkeletonView.framework */; };
+		0F68F170235F606500B5D4E7 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68F16E235F606500B5D4E7 /* SampleTableViewCell.swift */; };
+		0F68F171235F606500B5D4E7 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F68F16F235F606500B5D4E7 /* SampleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		0F4EAA60235F02D300B2FCBF /* SkeletonViewSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkeletonViewSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4EAA64235F02D300B2FCBF /* SkeletonViewSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonViewSampleUITests.swift; sourceTree = "<group>"; };
 		0F4EAA66235F02D300B2FCBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F68F16C235F5CAC00B5D4E7 /* SkeletonView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkeletonView.framework; path = Carthage/Build/iOS/SkeletonView.framework; sourceTree = SOURCE_ROOT; };
+		0F68F16E235F606500B5D4E7 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
+		0F68F16F235F606500B5D4E7 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
+		76F2C5C16D0600AE751387FF /* Pods-SkeletonViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonViewSample.debug.xcconfig"; path = "Target Support Files/Pods-SkeletonViewSample/Pods-SkeletonViewSample.debug.xcconfig"; sourceTree = "<group>"; };
+		D9EBEE6CFFC1CDF164E2EBF7 /* Pods-SkeletonViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonViewSample.release.xcconfig"; path = "Target Support Files/Pods-SkeletonViewSample/Pods-SkeletonViewSample.release.xcconfig"; sourceTree = "<group>"; };
+		DCF7456B41D79033213D7AD9 /* Pods_SkeletonViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkeletonViewSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F68F16D235F5CAC00B5D4E7 /* SkeletonView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +89,13 @@
 		0F4EAA36235F02D300B2FCBF = {
 			isa = PBXGroup;
 			children = (
+				0F68F16B235F5C9500B5D4E7 /* Frameworks */,
 				0F4EAA41235F02D300B2FCBF /* SkeletonViewSample */,
 				0F4EAA58235F02D300B2FCBF /* SkeletonViewSampleTests */,
 				0F4EAA63235F02D300B2FCBF /* SkeletonViewSampleUITests */,
 				0F4EAA40235F02D300B2FCBF /* Products */,
+				B178E938EB0EE9C4961C57E0 /* Pods */,
+				691AB1A1E37A3995E977AEA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +119,8 @@
 				0F4EAA4B235F02D300B2FCBF /* Assets.xcassets */,
 				0F4EAA4D235F02D300B2FCBF /* LaunchScreen.storyboard */,
 				0F4EAA50235F02D300B2FCBF /* Info.plist */,
+				0F68F16E235F606500B5D4E7 /* SampleTableViewCell.swift */,
+				0F68F16F235F606500B5D4E7 /* SampleTableViewCell.xib */,
 			);
 			path = SkeletonViewSample;
 			sourceTree = "<group>";
@@ -128,6 +143,31 @@
 			path = SkeletonViewSampleUITests;
 			sourceTree = "<group>";
 		};
+		0F68F16B235F5C9500B5D4E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F68F16C235F5CAC00B5D4E7 /* SkeletonView.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		691AB1A1E37A3995E977AEA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCF7456B41D79033213D7AD9 /* Pods_SkeletonViewSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B178E938EB0EE9C4961C57E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76F2C5C16D0600AE751387FF /* Pods-SkeletonViewSample.debug.xcconfig */,
+				D9EBEE6CFFC1CDF164E2EBF7 /* Pods-SkeletonViewSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +178,7 @@
 				0F4EAA3B235F02D300B2FCBF /* Sources */,
 				0F4EAA3C235F02D300B2FCBF /* Frameworks */,
 				0F4EAA3D235F02D300B2FCBF /* Resources */,
+				0F68F16A235F5BCA00B5D4E7 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -233,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F4EAA4F235F02D300B2FCBF /* LaunchScreen.storyboard in Resources */,
+				0F68F171235F606500B5D4E7 /* SampleTableViewCell.xib in Resources */,
 				0F4EAA4C235F02D300B2FCBF /* Assets.xcassets in Resources */,
 				0F4EAA4A235F02D300B2FCBF /* Main.storyboard in Resources */,
 			);
@@ -254,12 +296,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F68F16A235F5BCA00B5D4E7 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SkeletonView.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F4EAA3B235F02D300B2FCBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0F4EAA47235F02D300B2FCBF /* ViewController.swift in Sources */,
+				0F68F170235F606500B5D4E7 /* SampleTableViewCell.swift in Sources */,
 				0F4EAA43235F02D300B2FCBF /* AppDelegate.swift in Sources */,
 				0F4EAA45235F02D300B2FCBF /* SceneDelegate.swift in Sources */,
 			);
@@ -432,10 +497,15 @@
 		};
 		0F4EAA6A235F02D300B2FCBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76F2C5C16D0600AE751387FF /* Pods-SkeletonViewSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TCT9DKNME;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SkeletonViewSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,10 +520,15 @@
 		};
 		0F4EAA6B235F02D300B2FCBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EBEE6CFFC1CDF164E2EBF7 /* Pods-SkeletonViewSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TCT9DKNME;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SkeletonViewSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
